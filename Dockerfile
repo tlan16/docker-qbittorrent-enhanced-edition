@@ -22,3 +22,5 @@ RUN apk add --no-cache unzip && \
     chmod +x /usr/bin/qbittorrent-nox && \
     rm -rf ./* && \
     apk del --purge unzip
+
+HEALTHCHECK CMD curl -f --head http://localhost:8080
