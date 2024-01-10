@@ -28,7 +28,7 @@ services:
 
 This image is based on [linuxserver/docker-qbittorrent](https://github.com/linuxserver/docker-qbittorrent) and adds [qBittorrent-Enhanced-Edition](https://api.github.com/repos/c0re100/qBittorrent-Enhanced-Edition).
 
-Alternative UI [VueTorrent](https://github.com/WDaan/VueTorrent) is available at path `/vuetorrent`. Enable it by setting `tools` --> `options` --> `Web UI` --> `[✔️] Use alternative Web UI` to `Files location:` `/vuetorrent`.
+Alternative UI [VueTorrent](https://github.com/WDaan/VueTorrent) is available at path `/vuetorrent`. Enable it by setting `tools` --> `options` --> `Web UI` --> `[✔️] Use alternative Web UI` to `Files location:` `/vuetorrent`. Note if you have CSP enforced (e.g. in reverse proxy), you may need up update the CSP. 
 
 ---
 
