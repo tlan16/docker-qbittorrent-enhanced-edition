@@ -7,7 +7,7 @@ getReleaseUrl() {
   curl --silent "$apiUrl" | grep browser_ | cut -d\" -f4
 }
 
-url=$(getReleaseUrl "WDaan" "VueTorrent")
+url=$(getReleaseUrl "VueTorrent" "VueTorrent")
 echo "url: $url"
 
 wget -O ./vuetorrent.zip "$url"
