@@ -15,7 +15,7 @@ FROM linuxserver/qbittorrent:latest
 ARG TARGETVARIANT
 
 COPY --from=download /download/qbtenh.zip /tmp/qbtenh.zip
-RUN apk add --no-cache unzip bash && \
+RUN apk add --no-cache unzip && \
     cd /tmp && \
     unzip ./qbtenh.zip && \
     mv ./qbittorrent-nox /usr/bin && \
