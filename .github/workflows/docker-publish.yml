@@ -36,4 +36,5 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
           repository: ${{ secrets.DOCKER_USERNAME }}/qbittorrent-enhanced
+          short-description: 'qBittorrent Enhanced Edition'
       - uses: gautamkrishnar/keepalive-workflow@v1
